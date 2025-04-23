@@ -69,8 +69,8 @@ const HomePage: React.FC = () => {
   if (!user) {
     return (
       <EmptyState
-        title="MindfulMeへようこそ"
-        message="パーソナライズされた活動提案を受け取るために、プロフィールを設定しましょう。"
+        title="Kairakuへようこそ"
+        message="人生はメリハリだ！"
         actionLabel="プロフィールを作成"
         onAction={() => navigateTo('profile')}
       />
@@ -104,7 +104,7 @@ const HomePage: React.FC = () => {
       {suggestions.length === 0 ? (
         <EmptyState
           title="活動が見つかりません"
-          message="プロフィールに意味のある活動を追加して、おすすめを表示しましょう。"
+          message="取り組みたい活動を追加して、おすすめを表示しましょう。"
           actionLabel="活動を追加"
           onAction={() => navigateTo('profile')}
         />
@@ -122,10 +122,10 @@ const HomePage: React.FC = () => {
       
       <div className="mt-12 bg-blue-50 rounded-lg p-6">
         <h3 className="text-xl font-semibold text-blue-800 mb-3">
-          あなたの目標を忘れずに
+          目標を忘れずに
         </h3>
         <p className="text-blue-700 mb-4">
-          一時的な快楽ではなく、本当の充実感をもたらす活動に焦点を当てましょう：
+          一時的な快楽に逃げたらのちに後悔するんや…：
         </p>
         
         <ul className="list-disc pl-5 text-blue-700 space-y-1">
